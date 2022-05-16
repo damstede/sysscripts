@@ -1,62 +1,100 @@
+@echo off
+
 :: Google Chrome snelkoppelingen
-COPY "C:\Users\Public\Desktop\Google Chrome.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\Google Chrome.lnk"
-COPY "C:\Users\Public\Desktop\Google Chrome.lnk" "%USERPROFILE%\Desktop\Google Chrome.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\Google Chrome.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\Google Chrome.lnk"
+	COPY %SHORTCUT% "%USERPROFILE%\Desktop\Google Chrome.lnk"
+)
 
 :: Firefox snelkoppelingen
-COPY "C:\Users\Public\Desktop\Firefox.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\Firefox.lnk"
-COPY "C:\Users\Public\Desktop\Firefox.lnk" "%USERPROFILE%\Desktop\Firefox.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\Firefox.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\Firefox.lnk"
+	COPY %SHORTCUT% "%USERPROFILE%\Desktop\Firefox.lnk"
+)
 
 :: Coach 7 snelkoppelingen
-COPY "C:\Users\Public\Desktop\Coach 7.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\Coach 7.lnk"
-COPY "C:\Users\Public\Desktop\Coach 7.lnk" "%USERPROFILE%\Desktop\Coach 7.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\Coach 7.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\Coach 7.lnk"
+	COPY %SHORTCUT% "%USERPROFILE%\Desktop\Coach 7.lnk"
+)
 
 :: ClaroRead Pro snelkoppelingen
-COPY "C:\Users\Public\Desktop\ClaroRead Pro.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\ClaroRead Pro.lnk"
-COPY "C:\Users\Public\Desktop\ClaroRead Pro.lnk" "%USERPROFILE%\Desktop\ClaroRead Pro.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\ClaroRead Pro.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\ClaroRead Pro.lnk"
+	COPY %SHORTCUT% "%USERPROFILE%\Desktop\ClaroRead Pro.lnk"
+)
 
 :: AMIS snelkoppeling start menu
-COPY "C:\Users\Public\Desktop\AMIS.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\AMIS.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\AMIS.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\AMIS.lnk"
+)
 
 :: Arduino snelkoppelingen
-COPY "C:\Users\Public\Desktop\Arduino.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\Arduino.lnk"
-COPY "C:\Users\Public\Desktop\Arduino.lnk" "%USERPROFILE%\Desktop\Arduino.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\Arduino.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\Arduino.lnk"
+	COPY %SHORTCUT% "%USERPROFILE%\Desktop\Arduino.lnk"
+)
 
 :: Inkscape snelkoppelingen
-COPY "C:\Users\Public\Desktop\Inkscape.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\Inkscape.lnk"
-COPY "C:\Users\Public\Desktop\Inkscape.lnk" "%USERPROFILE%\Desktop\Inkscape.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\Inkscape.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\Inkscape.lnk"
+	COPY %SHORTCUT% "%USERPROFILE%\Desktop\Inkscape.lnk"
+)
 
 :: LEGO Mindstorms snelkoppelingen
-COPY "C:\Users\Public\Desktop\LEGO MINDSTORMS Education EV3.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\LEGO MINDSTORMS Education EV3.lnk"
-COPY "C:\Users\Public\Desktop\LEGO MINDSTORMS Education EV3.lnk" "%USERPROFILE%\Desktop\LEGO MINDSTORMS Education EV3.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\LEGO MINDSTORMS Education EV3.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\LEGO MINDSTORMS Education EV3.lnk"
+	COPY %SHORTCUT% "%USERPROFILE%\Desktop\LEGO MINDSTORMS Education EV3.lnk"
+)
 
 :: OpenShot Video Editor snelkoppelingen
-COPY "C:\Users\Public\Desktop\OpenShot Video Editor.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\OpenShot Video Editor.lnk"
-COPY "C:\Users\Public\Desktop\OpenShot Video Editor.lnk" "%USERPROFILE%\Desktop\OpenShot Video Editor.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\OpenShot Video Editor.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\OpenShot Video Editor.lnk"
+	COPY %SHORTCUT% "%USERPROFILE%\Desktop\OpenShot Video Editor.lnk"
+)
 
 :: Scribus snelkoppelingen
-COPY "C:\Users\Public\Desktop\Scribus 1.4.8.lnk" "%APPDATA%\Microsoft\Windows\Start Menu\Scribus.lnk"
-COPY "C:\Users\Public\Desktop\Scribus 1.4.8.lnk" "%USERPROFILE%\Desktop\Scribus.lnk"
+SET SHORTCUT="C:\Users\Public\Desktop\Scribus 1.4.8.lnk"
+IF EXIST %SHORTCUT% (
+	COPY %SHORTCUT% "%APPDATA%\Microsoft\Windows\Start Menu\Scribus.lnk"
+	COPY %SHORTCUT% "%USERPROFILE%\Desktop\Scribus.lnk"
+)
 
 :: Wink snelkoppeling start menu & bureaublad
-ECHO [InternetShortcut] > "%USERPROFILE%\Desktop\Wink.url"
-ECHO URL="C:\Program Files (x86)\DebugMode\Wink\Wink.exe" >> "%USERPROFILE%\Desktop\Wink.url"
-ECHO IconFile="C:\Program Files (x86)\DebugMode\Wink\Wink.exe" >> "%USERPROFILE%\Desktop\Wink.url"
-ECHO IconIndex=0 >> "%USERPROFILE%\Desktop\Wink.url"
-COPY "%USERPROFILE%\Desktop\Wink.url" "%USERPROFILE%\Desktop\Wink.url"
+SET TARGET="C:\Program Files (x86)\DebugMode\Wink\Wink.exe"
+IF EXIST %TARGET% (
+	ECHO [InternetShortcut] > "%USERPROFILE%\Desktop\Wink.url"
+	ECHO URL=%TARGET% >> "%USERPROFILE%\Desktop\Wink.url"
+	ECHO IconFile=%TARGET% >> "%USERPROFILE%\Desktop\Wink.url"
+	ECHO IconIndex=0 >> "%USERPROFILE%\Desktop\Wink.url"
+)
 
 :: Blender snelkoppeling start menu & bureaublad
-ECHO [InternetShortcut] > "%USERPROFILE%\Desktop\Blender.url"
-ECHO URL="C:\Program Files\Blender Foundation\Blender 2.82\blender.exe" >> "%USERPROFILE%\Desktop\Blender.url"
-ECHO IconFile="C:\Program Files\Blender Foundation\Blender 2.82\blender.exe" >> "%USERPROFILE%\Desktop\Blender.url"
-ECHO IconIndex=0 >> "%USERPROFILE%\Desktop\Blender.url"
-COPY "%USERPROFILE%\Desktop\Blender.url" "%USERPROFILE%\Desktop\Blender.url"
+SET TARGET="C:\Program Files\Blender Foundation\Blender 2.82\blender.exe"
+IF EXIST %TARGET% (
+	ECHO [InternetShortcut] > "%USERPROFILE%\Desktop\Blender.url"
+	ECHO URL=%TARGET% >> "%USERPROFILE%\Desktop\Blender.url"
+	ECHO IconFile=%TARGET% >> "%USERPROFILE%\Desktop\Blender.url"
+	ECHO IconIndex=0 >> "%USERPROFILE%\Desktop\Blender.url"
+)
 
 :: LaserWorkV6 snelkoppeling start menu & bureaublad
-ECHO [InternetShortcut] > "%USERPROFILE%\Desktop\LaserWorkV6.url"
-ECHO URL="C:\LaserWorkV6\LaserWorkV6.exe" >> "%USERPROFILE%\Desktop\LaserWorkV6.url"
-ECHO IconFile="C:\LaserWorkV6\LaserWorkV6.exe" >> "%USERPROFILE%\Desktop\LaserWorkV6.url"
-ECHO IconIndex=0 >> "%USERPROFILE%\Desktop\LaserWorkV6.url"
-COPY "%USERPROFILE%\Desktop\LaserWorkV6.url" "%USERPROFILE%\Desktop\LaserWorkV6.url"
+SET TARGET="C:\LaserWorkV6\LaserWorkV6.exe"
+IF EXIST %TARGET% (
+	ECHO [InternetShortcut] > "%USERPROFILE%\Desktop\LaserWorkV6.url"
+	ECHO URL=%TARGET% >> "%USERPROFILE%\Desktop\LaserWorkV6.url"
+	ECHO IconFile=%TARGET% >> "%USERPROFILE%\Desktop\LaserWorkV6.url"
+	ECHO IconIndex=0 >> "%USERPROFILE%\Desktop\LaserWorkV6.url"
+)
 
 :: Mijn Zaam snelkoppeling bureaublad
 ECHO [InternetShortcut] > "%USERPROFILE%\Desktop\Mijn Zaam.url"

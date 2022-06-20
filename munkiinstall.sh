@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$(id -u)" -ne 0 ]; then
-	echo "Error: no root access. Voer dit commando uit met sudo"
+	echo "Error: no root access. Voer dit commando uit met sudo: sudo curl -L http://dmsc.freekb.es | sudo bash"
 	exit 1
 fi
 

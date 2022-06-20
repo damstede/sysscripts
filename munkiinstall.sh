@@ -16,7 +16,7 @@ rm -f /tmp/munki.pkg
 
 echo "Munki instellen voor Damstede Lyceum..."
 SETTINGS='/Library/Preferences/ManagedInstalls'
-defaults write $SETTINGS SoftwareRepoURL "smb://munki.damstede.eu/"
+defaults write $SETTINGS SoftwareRepoURL "http://munki.damstede.eu/"
 defaults write $SETTINGS ClientIdentifier "mani_damstede"
 
 echo "Autorisatie instellen..."
